@@ -31,7 +31,7 @@ public class TestPerson {
 
         // When
         Person person = new Person(expected);
-
+        person.setName("Leon");
         // Then
         String actual = person.getName();
         Assert.assertEquals(expected, actual);
@@ -44,7 +44,7 @@ public class TestPerson {
 
         // When
         Person person = new Person(expected);
-
+        person.setAge(5);
         // Then
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
@@ -59,7 +59,8 @@ public class TestPerson {
 
         // When
         Person person = new Person(expectedName, expectedAge);
-
+        person.setAge(5);
+        person.setName("Leon");
         // Then
         Integer actualAge = person.getAge();
         String actualName = person.getName();
